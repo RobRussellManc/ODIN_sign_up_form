@@ -29,7 +29,6 @@ body {
     flex: 1 1;
     flex-direction: column;
     background-color: rgb(207, 46, 24);
-    width: 100%;
     height: 100vh;
 }
 
@@ -37,7 +36,6 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 1;
-    height: auto;
     justify-content: space-around;
     background-color: rgb(235, 235, 235);
 }
@@ -101,16 +99,18 @@ img.logo {
 
 
 
-.space_above_header{
-    max-height: 70%;
-    min-height:5px;
-}
+
 
 .header_text {
+
     text-align: left;
     font-weight: bolder;
     margin-bottom: min(0.5vw, 15px);
-    
+}
+
+.space_above_header {
+    max-height: 20vw;
+    min-height:5px;
 }
 
 
@@ -135,9 +135,10 @@ img.logo {
 .content {
     padding-left: min(50px, 5%);
     width: min(80%, 600px);
-    z-index: 10;
-    
+    z-index: 10;    
 }   
+
+
 
 .add_top_margin {
     padding-top: 20px;
@@ -202,6 +203,10 @@ input:valid {
     border: 2px solid #596D48: 
 }
 
+input:focus {
+    box-shadow: 2px 2px 5px rgb(156, 156, 156);
+}
+
 .small_font {
     font-size: 0.8em;
 }
@@ -219,7 +224,35 @@ a:hover {
     font-weight: bold;
     color: white;
     font-size:0.6em;
-   
     margin:  10px auto;
     z-index: 10;
+}
+
+.required_color {
+    
+    margin-left: 5%;
+    width: 200px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+   
+}
+
+.required_box {
+    height: 10px;
+    width: 40px;
+    border: 2px solid rgb(134, 53, 53);
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.required_color:after {
+    content: ' = required';
+    vertical-align: middle;
+    font-style: italic;
+    font-weight: 200;
+    
+    
 }
