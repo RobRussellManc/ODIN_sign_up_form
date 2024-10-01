@@ -17,22 +17,77 @@
             <span class="logo_text">ODIN</span>
         </div>
 
+        <div class="credit">Photo by Halie West on Upsplash</div>
+
     </div>
 
     <div class="main_contents">
         <div class="header">
-
+            <div class="space_above_header"></div>
             <div class="content header_text">This is not a real online service! However, it is a website that Rob has made.  It is going to have a form that doesn't work, but it'll look <span class="italic"> nice.</span> <p>    
             Hopefully. Let's see!
             </p>
             </div>
 
         </div>
-        <div class="middle"></div>
+        <div class="middle">
+            
+            <div class="content add_top_margin header_text">Lets do this!</div>
+            
+
+                <form action="example.com/path" id="myForm" class="form_flex content" method="post">
+                    
+                    <div class="one form_item">
+                        <label for="first_name">
+                            First Name
+                        </label>
+                        <input type="text" id="first_name" required>
+                    </div>  
+                    
+                    <div class="two form_item">
+                        <label for="second_name">
+                            Second Name
+                        </label>
+                        <input type="text" id="second_name">
+                    </div> 
+
+                    <div class="three form_item">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="email" id="email" required>
+                    </div> 
+
+                    <div class="four form_item">
+                        <label for="phone_number">
+                            Phone number
+                        </label>
+                        <input type="text" id="phone_number">
+                    </div> 
+
+                    <div class="five form_item">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" id="password" required>
+                    </div> 
+
+                    <div class="six form_item">
+                        <label for="confirm_password">
+                            confirm password
+                        </label>
+                        <input type="password" id="confirm_password" required>
+                    </div> 
+                  
+                </form>
+            
+
+
+        </div>
         <div class="footer">
-            <div class="content">
-                <button>Create account</button>
-                <p>Already have an account? Log in</p>
+            <div class="content add_top_margin">
+                <button type="submit" form="myForm">Create account</button>
+                <div class="header_text small_font">Already have an account? <a href="login.html">Log in </a></div>
             </div>
         </div>
     <div>
